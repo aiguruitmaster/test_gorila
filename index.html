@@ -7,16 +7,44 @@
     <meta name="description" content="gorilla ua casino — complete guide 2026">
     
     
+    
+    <!-- Scripts & Styles -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
+    
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
-        body { font-family: 'Inter', sans-serif; background-color: #020617; color: #f8fafc; }
-        .hero-gradient { background: radial-gradient(circle at 50% 50%, #14532d 0%, #020617 70%); }
-        .glass-card { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
-        .cta-glow { box-shadow: 0 0 30px rgba(163, 230, 53, 0.5); }
-        .game-card:hover img { transform: scale(1.1); }
-        .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+
+        .hero-gradient {
+            background: radial-gradient(circle at top right, #10b98133, transparent), 
+                        radial-gradient(circle at bottom left, #05966922, transparent);
+        }
+
+        .cta-pulse {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+            70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(16, 185, 129, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+        }
+
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .game-card:hover img {
+            transform: scale(1.1);
+        }
     </style>
 
 <link rel="canonical" href="https://test_gorila/" />
@@ -26,144 +54,142 @@
 <body class="antialiased">
 
     <!-- Sticky Header -->
-    <header class="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-lg border-b border-slate-800">
-        <div class="container mx-auto px-4 h-16 flex items-center justify-between">
-            <div class="flex items-center gap-8">
-                <a href="/" class="flex items-center">
-                    <img src="" alt="Logo" class="brand-logo h-8 w-auto">
-                </a>
-                <nav class="hidden md:flex gap-6 text-sm font-semibold text-slate-300">
-                    <a href="#" class="hover:text-lime-400 transition">SLOTY</a>
-                    <a href="#" class="hover:text-lime-400 transition">LIVE CASINO</a>
-                    <a href="#" class="hover:text-lime-400 transition">PROMOCJE</a>
-                </nav>
+    <header class="sticky top-0 z-50 w-full glass-card border-b border-white/10">
+        <div class="container mx-auto px-4 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <img src="" alt="Logo" class="brand-logo h-10 w-auto">
+                <span class="brand-name font-extrabold text-2xl tracking-tighter text-emerald-500 hidden sm:block"></span>
             </div>
             <div class="flex items-center gap-4">
-                <a href="#" class="text-sm font-bold px-4 py-2 text-slate-300 hover:text-white transition">Zaloguj</a>
-                <a href="#" class="brand-cta bg-lime-400 text-slate-950 text-sm font-extrabold px-5 py-2.5 rounded-md hover:bg-lime-300 transition uppercase tracking-tighter">Zarejestruj się</a>
+                <a href="#" class="brand-cta text-sm font-semibold hover:text-emerald-400 transition-colors">Zaloguj się</a>
+                <a href="#" class="brand-cta bg-emerald-500 hover:bg-emerald-400 text-slate-950 px-6 py-2.5 rounded-full font-bold transition-all transform hover:scale-105">
+                    Zarejestruj się
+                </a>
             </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="relative pt-32 pb-20 overflow-hidden hero-gradient">
+    <section class="relative overflow-hidden pt-12 pb-20 hero-gradient">
         <div class="container mx-auto px-4 relative z-10">
-            <div class="flex flex-col items-center text-center">
-                <div class="inline-flex items-center gap-2 bg-slate-900/80 border border-lime-500/30 px-4 py-1.5 rounded-full mb-6">
-                    <span class="relative flex h-3 w-3">
-                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-lime-400 opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-3 w-3 bg-lime-500"></span>
-                    </span>
-                    <span class="text-xs font-bold uppercase tracking-widest text-lime-400">2026 ZWERYFIKOWANE I LICENCJONOWANE</span>
-                </div>
-                <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight tracking-tight uppercase">
-                    gorilla ua casino
-                </h1>
-                <div class="brand-bonus text-3xl md:text-5xl font-black text-lime-400 mb-6 drop-shadow-md italic">
-                    <!-- Dynamic Bonus -->
-                </div>
-                <p class="text-slate-400 text-lg md:text-xl max-w-2xl mb-10">
-                    gorilla ua casino — complete guide 2026
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-                    <a href="#" class="brand-cta cta-glow bg-lime-400 text-slate-950 text-xl font-black px-12 py-6 rounded-2xl hover:scale-105 transition-transform flex items-center justify-center gap-3 group">
-                        ODBIERZ BONUS TERAZ
-                        <i data-lucide="chevron-right" class="w-6 h-6 group-hover:translate-x-1 transition-transform"></i>
-                    </a>
+            <div class="flex flex-col items-center text-center max-w-4xl mx-auto">
+                <div class="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/20 px-4 py-1.5 rounded-full mb-6">
+                    <i data-lucide="shield-check" class="w-4 h-4 text-emerald-500"></i>
+                    <span class="text-emerald-500 text-xs font-bold uppercase tracking-widest">2026 ВЕРИФІКОВАНО ТА ЛІЦЕНЗОВАНО</span>
                 </div>
                 
-                <!-- Trust Elements -->
-                <div class="mt-12 flex flex-wrap justify-center gap-8 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-                    <div class="flex items-center gap-2"><i data-lucide="shield-check"></i> <span class="text-xs font-bold">LICENCJONOWANE</span></div>
-                    <div class="flex items-center gap-2"><i data-lucide="zap"></i> <span class="text-xs font-bold">SZYBKIE WYPŁATY</span></div>
-                    <div class="flex items-center gap-2"><i data-lucide="lock"></i> <span class="text-xs font-bold">SSL SECURE</span></div>
+                <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+                    gorilla ua casino
+                </h1>
+                
+                <p class="text-xl text-slate-400 mb-8 max-w-2xl">
+                    gorilla ua casino — complete guide 2026
+                </p>
+
+                <div class="glass-card p-8 rounded-3xl mb-10 w-full max-w-lg border-emerald-500/30">
+                    <div class="text-sm uppercase tracking-widest text-slate-400 mb-2">Twój Bonus Powitalny</div>
+                    <div class="brand-bonus text-4xl md:text-5xl font-black text-white mb-6"></div>
+                    <a href="#" class="brand-cta cta-pulse block w-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 text-xl font-black py-5 rounded-2xl transition-all shadow-[0_0_30px_-5px_rgba(16,185,129,0.5)]">
+                        ODBIERZ BONUS TERAZ
+                    </a>
+                </div>
+
+                <div class="flex flex-wrap justify-center gap-6 text-slate-400 text-sm">
+                    <div class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i> Szybkie wypłaty</div>
+                    <div class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i> Licencjonowane gry</div>
+                    <div class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i> Wsparcie 24/7</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Quick Benefits -->
-    <section class="py-12 bg-slate-950 border-y border-slate-900">
+    <section class="py-16 bg-slate-900/50">
         <div class="container mx-auto px-4">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                <div class="glass-card p-6 rounded-2xl text-center">
-                    <div class="w-12 h-12 bg-lime-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i data-lucide="coins" class="text-lime-400"></i>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass-card p-8 rounded-2xl flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-emerald-500/10 rounded-full flex items-center justify-center mb-6">
+                        <i data-lucide="zap" class="w-8 h-8 text-emerald-500"></i>
                     </div>
-                    <h3 class="font-bold text-sm uppercase mb-1">Ponad 5000 Gier</h3>
-                    <p class="text-slate-500 text-xs">Najlepsze sloty i gry stołowe</p>
+                    <h3 class="text-xl font-bold mb-3">Błyskawiczne Wypłaty</h3>
+                    <p class="text-slate-400">Otrzymuj swoje wygrane w mniej niż 15 minut dzięki nowoczesnym metodom płatności.</p>
                 </div>
-                <div class="glass-card p-6 rounded-2xl text-center">
-                    <div class="w-12 h-12 bg-lime-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i data-lucide="banknote" class="text-lime-400"></i>
+                <div class="glass-card p-8 rounded-2xl flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-emerald-500/10 rounded-full flex items-center justify-center mb-6">
+                        <i data-lucide="trophy" class="w-8 h-8 text-emerald-500"></i>
                     </div>
-                    <h3 class="font-bold text-sm uppercase mb-1">Szybkie Wypłaty</h3>
-                    <p class="text-slate-500 text-xs">Twoja wygrana w 15 minut</p>
+                    <h3 class="text-xl font-bold mb-3">Program Lojalnościowy</h3>
+                    <p class="text-slate-400">Zbieraj punkty za każdy zakład i wymieniaj je na darmowe spiny oraz gotówkę.</p>
                 </div>
-                <div class="glass-card p-6 rounded-2xl text-center">
-                    <div class="w-12 h-12 bg-lime-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i data-lucide="trophy" class="text-lime-400"></i>
+                <div class="glass-card p-8 rounded-2xl flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-emerald-500/10 rounded-full flex items-center justify-center mb-6">
+                        <i data-lucide="lock" class="w-8 h-8 text-emerald-500"></i>
                     </div>
-                    <h3 class="font-bold text-sm uppercase mb-1">Turnieje VIP</h3>
-                    <p class="text-slate-500 text-xs">Ekskluzywne nagrody co tydzień</p>
-                </div>
-                <div class="glass-card p-6 rounded-2xl text-center">
-                    <div class="w-12 h-12 bg-lime-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i data-lucide="headset" class="text-lime-400"></i>
-                    </div>
-                    <h3 class="font-bold text-sm uppercase mb-1">Wsparcie 24/7</h3>
-                    <p class="text-slate-500 text-xs">Czat na żywo w języku polskim</p>
+                    <h3 class="text-xl font-bold mb-3">Bezpieczeństwo SSL</h3>
+                    <p class="text-slate-400">Twoje dane i fundusze są chronione przez najnowocześniejsze systemy szyfrowania.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Featured Games Showcase -->
-    <section class="py-20 bg-slate-950">
+    <section class="py-20">
         <div class="container mx-auto px-4">
-            <div class="flex items-center justify-between mb-10">
-                <h2 class="text-3xl font-bold flex items-center gap-3">
-                    <i data-lucide="flame" class="text-orange-500"></i>
-                    GORĄCE GRY W <span class="brand-name text-lime-400"></span>
-                </h2>
-                <a href="#" class="brand-cta text-lime-400 font-bold hover:underline">Zobacz wszystkie</a>
+            <div class="flex items-end justify-between mb-10">
+                <div>
+                    <h2 class="text-3xl font-bold mb-2">Popularne Gry</h2>
+                    <p class="text-slate-400">Zagraj w najlepsze sloty od światowych dostawców</p>
+                </div>
+                <a href="#" class="brand-cta text-emerald-500 font-bold hover:underline">Zobacz wszystkie</a>
             </div>
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
                 <!-- Mockup Game Cards -->
-                <div class="game-card group relative overflow-hidden rounded-xl bg-slate-900 aspect-[3/4] cursor-pointer">
-                    <img src="https://images.unsplash.com/photo-1518893063132-36e46dbe2428?auto=format&fit=crop&w=300&q=80" alt="Game" class="w-full h-full object-cover transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-                        <button class="brand-cta w-full bg-lime-400 text-black py-2 rounded font-bold text-xs uppercase">Graj Teraz</button>
+                <div class="game-card relative aspect-[3/4] rounded-xl overflow-hidden group cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1518893063132-36e46dbe2428?auto=format&fit=crop&q=80&w=400" alt="Slot" class="w-full h-full object-cover transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60"></div>
+                    <div class="absolute bottom-0 left-0 p-4 w-full">
+                        <div class="text-xs font-bold text-emerald-500 uppercase">Pragmatic</div>
+                        <div class="text-sm font-bold truncate">Gates of Olympus</div>
                     </div>
                 </div>
-                <div class="game-card group relative overflow-hidden rounded-xl bg-slate-900 aspect-[3/4] cursor-pointer">
-                    <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?auto=format&fit=crop&w=300&q=80" alt="Game" class="w-full h-full object-cover transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-                        <button class="brand-cta w-full bg-lime-400 text-black py-2 rounded font-bold text-xs uppercase">Graj Teraz</button>
+                <div class="game-card relative aspect-[3/4] rounded-xl overflow-hidden group cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1606103920295-9a091573f160?auto=format&fit=crop&q=80&w=400" alt="Slot" class="w-full h-full object-cover transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60"></div>
+                    <div class="absolute bottom-0 left-0 p-4 w-full">
+                        <div class="text-xs font-bold text-emerald-500 uppercase">NetEnt</div>
+                        <div class="text-sm font-bold truncate">Starburst</div>
                     </div>
                 </div>
-                <div class="game-card group relative overflow-hidden rounded-xl bg-slate-900 aspect-[3/4] cursor-pointer">
-                    <img src="https://images.unsplash.com/photo-1596838132731-dd9d5fd50939?auto=format&fit=crop&w=300&q=80" alt="Game" class="w-full h-full object-cover transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-                        <button class="brand-cta w-full bg-lime-400 text-black py-2 rounded font-bold text-xs uppercase">Graj Teraz</button>
+                <div class="game-card relative aspect-[3/4] rounded-xl overflow-hidden group cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1596838132731-3301c3fd4317?auto=format&fit=crop&q=80&w=400" alt="Slot" class="w-full h-full object-cover transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60"></div>
+                    <div class="absolute bottom-0 left-0 p-4 w-full">
+                        <div class="text-xs font-bold text-emerald-500 uppercase">Evolution</div>
+                        <div class="text-sm font-bold truncate">Lightning Roulette</div>
                     </div>
                 </div>
-                <div class="game-card group relative overflow-hidden rounded-xl bg-slate-900 aspect-[3/4] cursor-pointer">
-                    <img src="https://images.unsplash.com/photo-1550133730-695473e544be?auto=format&fit=crop&w=300&q=80" alt="Game" class="w-full h-full object-cover transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-                        <button class="brand-cta w-full bg-lime-400 text-black py-2 rounded font-bold text-xs uppercase">Graj Teraz</button>
+                <div class="game-card relative aspect-[3/4] rounded-xl overflow-hidden group cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1511193311914-0346f16efe90?auto=format&fit=crop&q=80&w=400" alt="Slot" class="w-full h-full object-cover transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60"></div>
+                    <div class="absolute bottom-0 left-0 p-4 w-full">
+                        <div class="text-xs font-bold text-emerald-500 uppercase">Hacksaw</div>
+                        <div class="text-sm font-bold truncate">Wanted Dead or Wild</div>
                     </div>
                 </div>
-                <div class="game-card group relative overflow-hidden rounded-xl bg-slate-900 aspect-[3/4] cursor-pointer">
-                    <img src="https://images.unsplash.com/photo-1511193311914-0346f16efe90?auto=format&fit=crop&w=300&q=80" alt="Game" class="w-full h-full object-cover transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-                        <button class="brand-cta w-full bg-lime-400 text-black py-2 rounded font-bold text-xs uppercase">Graj Teraz</button>
+                <div class="game-card relative aspect-[3/4] rounded-xl overflow-hidden group cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?auto=format&fit=crop&q=80&w=400" alt="Slot" class="w-full h-full object-cover transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60"></div>
+                    <div class="absolute bottom-0 left-0 p-4 w-full">
+                        <div class="text-xs font-bold text-emerald-500 uppercase">Play'n GO</div>
+                        <div class="text-sm font-bold truncate">Book of Dead</div>
                     </div>
                 </div>
-                <div class="game-card group relative overflow-hidden rounded-xl bg-slate-900 aspect-[3/4] cursor-pointer">
-                    <img src="https://images.unsplash.com/photo-1533073526757-2c8ca1df9f1c?auto=format&fit=crop&w=300&q=80" alt="Game" class="w-full h-full object-cover transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-                        <button class="brand-cta w-full bg-lime-400 text-black py-2 rounded font-bold text-xs uppercase">Graj Teraz</button>
+                <div class="game-card relative aspect-[3/4] rounded-xl overflow-hidden group cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1550133730-695473e544be?auto=format&fit=crop&q=80&w=400" alt="Slot" class="w-full h-full object-cover transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60"></div>
+                    <div class="absolute bottom-0 left-0 p-4 w-full">
+                        <div class="text-xs font-bold text-emerald-500 uppercase">Nolimit City</div>
+                        <div class="text-sm font-bold truncate">Mental</div>
                     </div>
                 </div>
             </div>
@@ -171,9 +197,9 @@
     </section>
 
     <!-- SEO Article Section -->
-    <section class="py-20 bg-slate-900/50">
+    <section class="py-16 border-t border-white/5">
         <div class="container mx-auto px-4">
-            <div class="max-w-4xl mx-auto prose prose-invert prose-lime">
+            <div class="prose prose-invert prose-emerald max-w-none">
                 
 <style>
   .n8n-article-content h2 { font-weight: 700 !important; margin: 2.5rem 0 1rem 0 !important; }
@@ -187,173 +213,337 @@
   .n8n-article-content a { color: #3b82f6 !important; text-decoration: underline !important; font-weight: 600 !important; }
 </style>
 <div class="n8n-article-content">
-  <h2>Dlaczego warto wybrać Gorilla UA Casino?</h2>
+  <h2>Чому варто обрати онлайн казино Gorilla для гри</h2>
 
-<p>Gorilla UA Casino to licencjonowana platforma hazardowa, która zdobyła uznanie wśród graczy dzięki nowoczesnej technologii, bogatej ofercie rozrywki oraz transparentnym zasadom działania. To kasyno online prowadzi działalność zgodnie z przepisami regulacyjnymi i posiada ważną licencję, co gwarantuje bezpieczeństwo środków finansowych oraz uczciwość oferowanych gier. Platforma wyróżnia się intuicyjnym interfejsem, szybkimi wypłatami oraz kompleksowym wsparciem dla graczy.</p>
+<p>Gorilla UA Casino — відносно новий гравець на українському ринку азартних ігор, який за короткий час зумів завоювати довіру тисяч користувачів. Платформа працює повністю легально, маючи офіційну ліцензію КРАІЛ, що гарантує безпеку фінансових операцій і чесність ігрового процесу. Казино пропонує величезний вибір сертифікованих слотів від провідних світових провайдерів, щедрі бонуси для новачків і постійних гравців, а також зручні методи поповнення рахунку та виведення виграшів у гривнях.</p>
 
-<p>Wybierając Gorilla UA Casino, gracze otrzymują dostęp do tysięcy slotów, gier stołowych oraz kasyna na żywo z profesjonalnymi krupierami. Operator współpracuje z czołowymi dostawcami oprogramowania, co zapewnia wysoką jakość grafiki, płynność rozgrywki oraz bezpieczeństwo danych osobowych. Dla nowych użytkowników przygotowano szczodry pakiet powitalny, który zwiększa szanse na pierwsze wygrane i pozwala na dłuższą zabawę przy minimalnym wkładzie własnym.</p>
+<p>Головні переваги Gorilla UA Casino включають швидку верифікацію через додаток Дія, адаптивну мобільну версію та власний додаток для комфортної гри з будь-якого пристрою. Платформа підтримує українську мову інтерфейсу, приймає платежі в гривнях і забезпечує цілодобову підтримку гравців. Завдяки інтуїтивно зрозумілому дизайну навіть новачки зможуть швидко розібратися з функціоналом і почати грати в улюблені ігрові автомати на гроші.</p>
 
-<p>Kasyno obsługuje różnorodne metody płatności, w tym karty bankowe, e-portfele oraz kryptowaluty, co ułatwia zarówno wpłaty, jak i wypłaty środków. Dodatkowym atutem jest dostępność platformy na urządzeniach mobilnych – gracze mogą korzystać z pełnej oferty gier na smartfonach i tabletach, nie tracąc nic z funkcjonalności wersji desktopowej. Obsługa klienta działa całodobowo, oferując pomoc w języku ukraińskim oraz kilku innych językach europejskich.</p>
+<p>У цьому огляді ми детально розглянемо всі аспекти роботи казино: від процесу реєстрації та отримання бонусів до асортименту ігор і методів виведення коштів. Ви дізнаєтеся, як створити акаунт за кілька хвилин, які документи потрібні для верифікації, як активувати вітальний бонус і на які особливості платформи варто звернути увагу перед початком гри.</p>
 
-<h2>Rejestracja i Logowanie w Serwisie</h2>
+<h2>Ліцензія КРАІЛ та безпека гравців у Gorilla UA Casino</h2>
 
-<p>Proces rejestracji w serwisie jest prosty i zajmuje zaledwie kilka minut. Aby założyć konto gracza, należy przejść na oficjalną stronę internetową operatora i kliknąć przycisk "Rejestracja", który znajduje się w prawym górnym rogu ekranu. Następnie wyświetli się formularz rejestracyjny, w którym trzeba podać podstawowe dane osobowe oraz kontaktowe.</p>
+<p>Найважливіший фактор при виборі онлайн казино — наявність офіційної ліцензії від регулятора. Gorilla Casino працює на підставі ліцензії Комісії з регулювання азартних ігор та лотерей (КРАІЛ), що підтверджує законність діяльності оператора на території України. Ліцензія КРАІЛ означає, що платформа пройшла всі необхідні перевірки, дотримується встановлених стандартів безпеки та відповідає вимогам українського законодавства.</p>
+
+<p>Безпека персональних даних і фінансових операцій забезпечується сучасними протоколами шифрування SSL. Усі транзакції захищені від несанкціонованого доступу, а особиста інформація гравців зберігається в зашифрованому вигляді на захищених серверах. Казино не передає дані третім особам без згоди користувача і дотримується європейських стандартів конфіденційності.</p>
+
+<p>Чесність ігор гарантується використанням генераторів випадкових чисел (RNG), які регулярно проходять перевірку незалежними аудиторами. Всі ігрові автомати мають сертифікати від провайдерів і працюють з заявленим показником RTP (Return to Player). Платформа також дотримується принципів відповідальної гри: надає інструменти для встановлення лімітів на депозити, часу гри та самовиключення з платформи при необхідності.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Критерій безпеки</th>
+      <th>Деталі</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ліцензія</td>
+      <td>КРАІЛ (офіційний регулятор України)</td>
+    </tr>
+    <tr>
+      <td>Шифрування даних</td>
+      <td>SSL 256-біт</td>
+    </tr>
+    <tr>
+      <td>Чесність ігор</td>
+      <td>Сертифіковані RNG, регулярні аудити</td>
+    </tr>
+    <tr>
+      <td>Захист фінансів</td>
+      <td>Окремі рахунки для коштів гравців</td>
+    </tr>
+    <tr>
+      <td>Відповідальна гра</td>
+      <td>Ліміти, самовиключення, підтримка</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Реєстрація та вхід в особистий кабінет</h2>
+
+<p>Створення облікового запису в Gorilla Casino займає не більше трьох хвилин. Процес максимально спрощений і не вимагає складних дій. Для реєстрації достатньо перейти на офіційний сайт казино, натиснути кнопку «Реєстрація» у верхньому правому куті та заповнити коротку форму з базовою інформацією.</p>
+
+<p>Покрокова інструкція з реєстрації:</p>
 
 <ul>
-<li>Wpisz swój adres e-mail oraz wymyśl bezpieczne hasło</li>
-<li>Podaj dane osobowe: imię, nazwisko, datę urodzenia</li>
-<li>Wybierz walutę konta (UAH, USD, EUR lub inne)</li>
-<li>Zaakceptuj regulamin serwisu oraz politykę prywatności</li>
-<li>Potwierdź adres e-mail, klikając link aktywacyjny</li>
+  <li><strong>Крок 1:</strong> Оберіть спосіб реєстрації — через номер телефону або електронну пошту</li>
+  <li><strong>Крок 2:</strong> Введіть номер телефону у форматі +380 або email-адресу</li>
+  <li><strong>Крок 3:</strong> Створіть надійний пароль (мінімум 8 символів, включаючи цифри та літери)</li>
+  <li><strong>Крок 4:</strong> Підтвердіть, що вам виповнилося 21 рік і ви погоджуєтесь з умовами користування</li>
+  <li><strong>Крок 5:</strong> Підтвердіть реєстрацію через SMS-код або посилання в листі</li>
 </ul>
 
-<p>Po założeniu konta gracza zaleca się przeprowadzenie pełnej weryfikacji tożsamości. Proces ten wymaga przesłania skanów dokumentów potwierdzających tożsamość (dowód osobisty, paszport) oraz potwierdzenia adresu zamieszkania (rachunek za media, wyciąg bankowy). Weryfikacja jest konieczna, aby móc wypłacić wygrane środki – bez tego kroku operator może zablokować wypłatę do momentu potwierdzenia danych.</p>
+<p>Після створення акаунту рекомендується відразу пройти верифікацію особи. Це обов'язкова процедура для всіх легальних казино в Україні, яка необхідна для першого виведення коштів. Gorilla Casino пропонує три зручні способи верифікації:</p>
 
-<p>Logowanie do serwisu odbywa się poprzez formularz, w którym należy podać adres e-mail oraz hasło. W przypadku problemów z dostępem do konta, dostępna jest opcja odzyskiwania hasła za pomocą linku wysyłanego na zarejestrowany adres mailowy. Dla zwiększenia bezpieczeństwa konta można włączyć dwuskładnikowe uwierzytelnianie (2FA), które dodatkowo chroni profil gracza przed nieautoryzowanym dostępem.</p>
+<h3>Верифікація через Дію</h3>
 
-<h2>Bonusy i Promocje w Gorilla UA Casino</h2>
+<p>Найшвидший і найзручніший спосіб — верифікація через додаток Дія. Процес займає буквально 1-2 хвилини. Вам потрібно лише відсканувати QR-код з особистого кабінету казино за допомогою камери в додатку Дія і підтвердити передачу даних. Система автоматично отримає всю необхідну інформацію з вашого цифрового паспорта, і верифікація буде завершена миттєво.</p>
 
-<p>Operator oferuje rozbudowany system bonusów i promocji, skierowany zarówno do nowych graczy, jak i stałych klientów. Najważniejszym elementem oferty jest bonus powitalny, który można odebrać po rejestracji i dokonaniu pierwszej wpłaty. Dodatkowo platforma regularnie organizuje akcje promocyjne, w ramach których można otrzymać darmowe spiny, cashback lub udział w turniejach z pulą nagród.</p>
+<h3>Верифікація через BankID</h3>
 
-<p>Program lojalnościowy nagradza aktywnych graczy punktami, które można wymienić na bonusy finansowe lub inne korzyści. Im więcej czasu spędzasz na platformie i im więcej obstawiasz, tym wyższym poziom statusu możesz osiągnąć, co otwiera dostęp do ekskluzywnych nagród i szybszych wypłat. System poziomów motywuje do regularnej gry i pozwala na maksymalne wykorzystanie potencjału platformy.</p>
+<p>Альтернативний варіант — використання системи BankID, якщо ваш банк підтримує цю технологію. Авторизація проходить через мобільний банкінг, і дані передаються напряму від банківської установи до казино в захищеному форматі.</p>
 
-<p>Wszystkie bonusy posiadają określone warunki obrotu, które należy spełnić przed zleceniem wypłaty wygranych środków. Typowy wymóg obrotu wynosi od 30x do 40x wartości otrzymanego bonusu. Gracze powinni zawsze zapoznać się z regulaminem promocji, aby uniknąć nieporozumień i móc skutecznie zrealizować warunki bonusowe. Kod promocyjny, jeśli jest wymagany, należy wpisać podczas dokonywania wpłaty w odpowiednim polu formularza.</p>
+<h3>Верифікація документами</h3>
 
-<h3>Pakiet Powitalny dla Nowych Graczy</h3>
+<p>Якщо перші два варіанти недоступні, можна пройти класичну верифікацію, завантаживши скани або фотографії паспорта і документа з ідентифікаційним номером. Обробка документів займає від кількох годин до одного робочого дня.</p>
 
-<p>Pakiet powitalny w Gorilla UA Casino składa się zazwyczaj z kilku etapów bonusowych, rozłożonych na pierwsze depozyty. Pierwszy depozyt jest nagradzany najhojniej – gracze mogą otrzymać nawet 100% wartości wpłaty oraz dodatkowo określoną liczbę darmowych spinów na popularne automaty do gier. Dzięki temu nowi użytkownicy rozpoczynają swoją przygodę z platformą z podwójnym budżetem, co znacząco zwiększa szanse na wygraną.</p>
+<p>Вхід в особистий кабінет Gorilla здійснюється через ту ж кнопку у верхньому куті сайту. Введіть свій номер телефону або email і пароль, і ви отримаєте доступ до всіх функцій платформи: історії ставок, бонусного балансу, налаштувань профілю та розділу для поповнення рахунку чи виведення виграшів.</p>
 
-<p>Kolejne depozyty również są premiowane bonusami, choć zazwyczaj o nieco niższej wartości procentowej. Łączna wartość pakietu powitalnego może sięgać nawet kilku tysięcy złotych lub hrywien, w zależności od wybranej waluty konta. Aby odebrać bonus, wystarczy dokonać minimalnego depozytu określonego w regulaminie, a środki bonusowe zostaną automatycznie przypisane do konta gracza.</p>
+<h2>Бонусна програма та акції</h2>
 
-<p>Darmowe spiny są zazwyczaj aktywowane na konkretnych slotach wskazanych przez operatora. Po wykorzystaniu free spinów, wygrane z nich również podlegają wymogowi obrotu, zanim będzie możliwe zlecenie wypłaty. Warto pamiętać, że bonusy mają ograniczony czas ważności, dlatego należy wykorzystać je w wyznaczonym terminie, aby nie utracić możliwości skorzystania z promocji.</p>
+<p>Gorilla Casino пропонує привабливу систему заохочень для нових і постійних гравців. Бонусна програма включає вітальний пакет, регулярні акції, турніри з призовими фондами та програму лояльності з кешбеком за активну гру.</p>
 
-<h2>Biblioteka Gier i Dostawcy Oprogramowania</h2>
+<h3>Вітальний бонус</h3>
 
-<p>Platforma współpracuje z ponad 50 renomowanymi dostawcami oprogramowania, co przekłada się na bibliotekę liczącą kilka tysięcy gier o różnorodnej tematyce i mechanice. Gracze znajdą tutaj zarówno klasyczne automaty do gier, jak i nowoczesne sloty wideo z bonusowymi rundami, mnożnikami oraz funkcjami free spins. W kolekcji nie brakuje popularnych tytułów od takich producentów jak Pragmatic Play, NetEnt, Play'n GO, Microgaming czy Evolution Gaming.</p>
+<p>Новачки отримують щедрий бонусний пакет на перші депозити. Стандартна пропозиція включає 100% бонус на суму першого поповнення рахунку плюс пакет безкоштовних обертань (фріспінів) у популярних слотах. Максимальна сума бонусу може сягати кількох тысяч гривень, що дозволяє значно збільшити стартовий банкролл і протестувати більше ігор.</p>
 
-<p>Poza slotami online, kasyno oferuje szeroki wybór gier stołowych, w tym różne wersje ruletki, blackjacka, bakarata oraz pokera. Dostępne są zarówno wersje RNG (z generatorem liczb losowych), jak i transmisje na żywo z prawdziwymi krupierami. Dla fanów szybkiej akcji przygotowano sekcję z grami typu crash oraz instant win, które oferują natychmiastowe rozstrzygnięcie zakładu i emocjonujące mnożniki wygranych.</p>
+<p>Для отримання вітального бонусу необхідно:</p>
 
-<p>Wszystkie gry można testować w trybie demo, co pozwala na zapoznanie się z mechaniką rozgrywki bez ryzyka utraty własnych środków. Funkcja ta jest szczególnie przydatna dla początkujących graczy, którzy dopiero uczą się zasad lub chcą sprawdzić, która gra najbardziej im odpowiada. Biblioteka jest regularnie aktualizowana o nowości, dzięki czemu oferta pozostaje atrakcyjna i świeża.</p>
+<ul>
+  <li>Завершити реєстрацію та верифікацію акаунту</li>
+  <li>Зробити перше поповнення рахунку мінімум на вказану в умовах суму (зазвичай від 100 грн)</li>
+  <li>Активувати бонус у відповідному розділі особистого кабінету або ввести промокод, якщо такий передбачений</li>
+  <li>Бонусні кошти та фріспіни будуть автоматично зараховані на ваш рахунок</li>
+</ul>
 
-<h3>Kasyno na Żywo</h3>
+<h3>Умови відіграшу бонусів</h3>
 
-<p>Sekcja kasyno na żywo to jeden z najbardziej prestiżowych obszarów platformy, oferujący rozgrywkę z profesjonalnymi krupierami w czasie rzeczywistym. Transmisje są prowadzone w wysokiej rozdzielczości z nowoczesnych studiów, co zapewnia pełne zanurzenie w atmosferze prawdziwego salonu gier. Gracze mogą obserwować każdy ruch krupiera na żywo, co gwarantuje transparentność i uczciwość rozgrywki.</p>
+<p>Як і в усіх ліцензійних казино, бонуси в Gorilla мають вимоги щодо вейджеру (відіграшу). Це означає, що перед виведенням виграшу, отриманого з бонусних коштів, потрібно прокрутити суму бонусу певну кількість разів. Стандартний вейджер становить x30-x40 від суми бонусу.</p>
 
-<p>W ofercie kasyna na żywo znajdują się różne warianty ruletki europejskiej, francuskiej oraz amerykańskiej, a także liczne stoły blackjacka z różnymi limitami stawek. Dostępne są również popularne game shows, takie jak Crazy Time, Monopoly Live czy Dream Catcher, które łączą elementy losowania z interaktywnymi bonusami i dużymi mnożnikami. Każdy stół ma określone limity minimalne i maksymalne, dzięki czemu zarówno początkujący, jak i high rollerzy znajdą coś dla siebie.</p>
-
-<p>Krupierzy posługują się kilkoma językami, w tym ukraińskim, angielskim i rosyjskim, co ułatwia komunikację i sprawia, że rozgrywka staje się bardziej osobista. W trakcie gry można korzystać z funkcji czatu na żywo, aby wchodzić w interakcje z innymi graczami oraz zadawać pytania prowadzącym. Kasyno na żywo dostępne jest także na urządzeniach mobilnych, co pozwala na grę w dowolnym miejscu i czasie.</p>
-
-<h2>Metody Płatności i Wypłaty</h2>
-
-<p>Gorilla UA Casino obsługuje szeroką gamę metod płatności, dostosowanych do potrzeb graczy z różnych krajów. Do najpopularniejszych sposobów wpłaty należą karty bankowe Visa i Mastercard, przelewy bankowe, e-portfele takie jak Skrill i Neteller, a także kryptowaluty, w tym Bitcoin, Ethereum oraz Tether. Każda metoda ma określone limity minimalne i maksymalne, które można sprawdzić w sekcji płatności po zalogowaniu do konta.</p>
-
-<p>Minimalny depozyt zazwyczaj wynosi równowartość 10-20 złotych lub hrywien, co umożliwia rozpoczęcie gry nawet przy niewielkim budżecie. Wpłaty są przetwarzane natychmiast, dzięki czemu gracze mogą od razu rozpocząć rozgrywkę po dokonaniu transakcji. Platforma nie pobiera opłat za depozyty, jednak warto sprawdzić, czy dostawca usługi płatniczej nie nakłada własnych prowizji za przetwarzanie transakcji.</p>
-
-<p>Wypłata wygranych jest możliwa po spełnieniu wymogu obrotu bonusem (jeśli był aktywny) oraz po zweryfikowaniu tożsamości. Czas realizacji wypłaty zależy od wybranej metody – przelewy na e-portfele są zazwyczaj najszybsze i zajmują od kilku minut do 24 godzin, natomiast przelewy bankowe mogą potrwać od 3 do 5 dni roboczych. Kryptowaluty oferują najszybszy i najbardziej anonimowy sposób wypłaty środków, co jest cenione przez wielu graczy.</p>
+<p>Приклад: ви отримали 1000 грн бонусу з вейджером x35. Щоб вивести виграш, потрібно зробити ставок на загальну суму 35 000 грн (1000 × 35). Не всі ігри однаково зараховуються у відіграш — слоти зараховуються на 100%, рулетка та карткові ігри можуть мати нижчий відсоток або взагалі не враховуватися.</p>
 
 <table>
-<thead>
-<tr>
-<th>Metoda płatności</th>
-<th>Minimalny depozyt</th>
-<th>Czas realizacji wypłaty</th>
-<th>Opłaty</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Visa / Mastercard</td>
-<td>50 UAH</td>
-<td>3-5 dni</td>
-<td>Brak</td>
-</tr>
-<tr>
-<td>Skrill / Neteller</td>
-<td>50 UAH</td>
-<td>Do 24h</td>
-<td>Brak</td>
-</tr>
-<tr>
-<td>Przelew bankowy</td>
-<td>100 UAH</td>
-<td>3-5 dni</td>
-<td>Możliwe</td>
-</tr>
-<tr>
-<td>Kryptowaluty</td>
-<td>Równowartość 10 USD</td>
-<td>Do 1h</td>
-<td>Brak</td>
-</tr>
-</tbody>
+  <thead>
+    <tr>
+      <th>Тип бонусу</th>
+      <th>Умови</th>
+      <th>Вейджер</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Бонус на депозит</td>
+      <td>100% до певної суми</td>
+      <td>x35-x40</td>
+    </tr>
+    <tr>
+      <td>Фріспіни</td>
+      <td>За депозит або без депозиту</td>
+      <td>x30 від виграшу</td>
+    </tr>
+    <tr>
+      <td>Кешбек</td>
+      <td>Повернення частини програшу</td>
+      <td>x3-x5 або без вейджеру</td>
+    </tr>
+    <tr>
+      <td>Бездепозитний бонус</td>
+      <td>За реєстрацію (рідко)</td>
+      <td>x50-x60</td>
+    </tr>
+  </tbody>
 </table>
 
-<h2>Aplikacja Mobilna Gorilla</h2>
+<h3>Постійні акції та турніри</h3>
 
-<p>Dla użytkowników urządzeń mobilnych operator przygotował zoptymalizowaną wersję strony internetowej, która działa płynnie w przeglądarkach mobilnych na systemach Android oraz iOS. Responsywna wersja mobilna automatycznie dostosowuje się do rozmiaru ekranu, zapewniając wygodną nawigację i pełny dostęp do wszystkich funkcji platformy. Gracze mogą logować się na swoje konto, dokonywać wpłat i wypłat, uczestniczyć w promocjach oraz grać we wszystkie dostępne gry bez konieczności instalowania dodatkowego oprogramowania.</p>
+<p>Gorilla Casino регулярно проводить тематичні акції, приурочені до свят та особливих подій. Це можуть бути бонуси на депозит у певні дні тижня, турніри на конкретних слотах з призовими фондами або розіграші цінних призів серед активних гравців. Інформація про поточні акції завжди доступна в розділі «Акції» на сайті казино.</p>
 
-<p>Niektóre kasyna oferują również dedykowaną aplikację mobilną, którą można pobrać bezpośrednio ze strony operatora lub z oficjalnych sklepów aplikacji. Aplikacja na telefon zapewnia jeszcze płynniejsze działanie, szybsze ładowanie gier oraz możliwość otrzymywania powiadomień push o nowych promocjach i bonusach. Proces instalacji jest prosty – wystarczy kliknąć link do pobrania, zezwolić na instalację aplikacji z nieznanych źródeł (w przypadku Androida) i postępować zgodnie z instrukcjami na ekranie.</p>
+<p>Програма лояльності нараховує бали за кожну зроблену ставку. Накопичені бали можна обміняти на бонусні кошти, фріспіни або інші привілеї. Чим вище ваш рівень у програмі лояльності, тим більше переваг ви отримуєте: підвищений кешбек, персональні бонуси та пріоритетну підтримку.</p>
 
-<p>Wersja mobilna oferuje pełną funkcjonalność, włącznie z dostępem do kasyna na żywo, sekcji płatności oraz obsługi klienta. Gra na smartfonie jest idealna dla osób, które chcą korzystać z rozrywki w dowolnym miejscu i czasie – w drodze do pracy, podczas przerwy obiadowej lub w zaciszu domowym na kanapie. Bezpieczeństwo danych jest na tym samym poziomie co w wersji desktopowej, dzięki zastosowaniu protokołu szyfrowania SSL.</p>
+<h2>Асортимент ігрових автоматів та провайдери</h2>
 
-<h2>Obsługa Klienta i Bezpieczeństwo</h2>
+<p>Ігрова колекція Gorilla Casino налічує понад тисячу сертифікованих слотів і настільних ігор від провідних світових розробників. Платформа співпрацює з такими визнаними провайдерами як Pragmatic Play, NetEnt, Play'n GO, Evolution Gaming, Playson, Yggdrasil, Microgaming та багатьма іншими. Кожна гра пройшла сертифікацію, має офіційний RTP і працює на випадкових алгоритмах, що виключає можливість маніпуляцій.</p>
 
-<p>Obsługa klienta w Gorilla UA Casino działa przez całą dobę, siedem dni w tygodniu, zapewniając pomoc w różnych językach, w tym w języku ukraińskim. Najszybszym sposobem uzyskania odpowiedzi na pytanie jest czat na żywo, dostępny bezpośrednio na stronie internetowej platformy. Po kliknięciu ikony czatu użytkownik zostaje połączony z konsultantem, który może pomóc w rozwiązaniu problemów technicznych, wyjaśnić zasady bonusów lub doradzić w kwestii weryfikacji konta.</p>
+<p>Навігація по каталогу ігор максимально зручна. Слоти розподілені за категоріями: нові надходження, популярні, джекпоти, бонусні покупки (Bonus Buy), класичні автомати. Також працює потужна система фільтрів — можна відібрати ігри за провайдером, тематикою, кількістю ліній виплат або волатильністю. Функція пошуку дозволяє швидко знайти конкретну гру за назвою.</p>
 
-<p>Alternatywnym sposobem kontaktu jest formularz e-mailowy, który można znaleźć w sekcji "Kontakt" na stronie kasyna. Czas odpowiedzi na wiadomość mailową wynosi zazwyczaj od kilku do 24 godzin, w zależności od natury zapytania. W sekcji FAQ dostępne są odpowiedzi na najczęściej zadawane pytania, co pozwala na szybkie samodzielne rozwiązanie wielu typowych problemów, takich jak odzyskiwanie hasła, weryfikacja dokumentów czy realizacja bonusów.</p>
+<p>Важлива перевага — можливість грати безкоштовно в демо режимі. Це дозволяє протестувати будь-який слот без ризику для власних коштів, вивчити механіку гри, зрозуміти частоту спрацювання бонусних раундів і прийняти рішення, чи варта гра ставок на реальні гроші. Демо доступне без реєстрації для більшості автоматів.</p>
 
-<p>Bezpieczeństwo jest kluczowym aspektem działania platformy. Operator stosuje zaawansowane szyfrowanie danych SSL, które chroni wszystkie transakcje finansowe oraz dane osobowe użytkowników. Platforma jest regularnie audytowana przez niezależne firmy, które sprawdzają uczciwość generatorów liczb losowych i zgodność z międzynarodowymi standardami bezpieczeństwa. Dzięki temu gracze mogą mieć pewność, że ich środki są bezpieczne, a wyniki gier nie są manipulowane.</p>
+<h3>Популярні слоти та новинки</h3>
 
-<h2>Porównanie: Licencjonowane Kasyna Zagraniczne vs. Lokalne Platformy</h2>
+<p>Серед найпопулярніших ігрових автоматів на платформі — перевірені хіти з високим RTP і захоплюючим геймплеєм. До улюблених гравцями слотів належать Gates of Olympus від Pragmatic Play з механікою множників і каскадних виплат, Book of Dead від Play'n GO — класичний слот про пригоди в Єгипті з розширюючимися символами, Sweet Bonanza — солодкий автомат з функцією купівлі бонусної гри.</p>
 
-<p>Wybór między licencjonowanymi kasynami zagranicznymi a lokalnymi platformami to ważna decyzja, która wpływa na bezpieczeństwo gry, dostępność metod płatności oraz jakość obsługi klienta. Poniższa tabela przedstawia kluczowe różnice między obiema opcjami, pomagając graczom podjąć świadomą decyzję.</p>
+<p>Gorilla Casino оперативно додає новинки від провайдерів, тому в каталозі завжди є свіжі релізи з інноваційними механіками. Особливо популярні слоти з функцією Megaways, де кількість способів виграшу на кожному спині може досягати сотень тисяч. Також затребувані автомати з прогресивними джекпотами, де призовий фонд постійно зростає і може сягати мільйонів гривень.</p>
+
+<p>Для любителів класики доступні традиційні слоти з трьома барабанами та символікою 777, фруктами й дзвіночками. Такі ігри мають просту механіку, високу швидкість обертів і підійдуть тим, хто цінує ностальгію за одноруким бандитом.</p>
+
+<p>Шанувальники швидкої гри оцінять ігрові автомати Горіла з можливістю грати безкоштовно в демо версії, що дозволяє відточити стратегію перед ставками на реальні кошти. Завдяки RTP понад 96% у багатьох топових слотах, шанси на виграш залишаються справедливими і прозорими.</p>
+
+<h3>Live Casino: ігри з живими дилерами</h3>
+
+<p>Розділ Live Casino переносить атмосферу справжнього наземного казино прямо на екран вашого пристрою. Ігри ведуться в реальному часі професійними дилерами з студій у HD-якості. Трансляція проходить у кількох камерах, що дозволяє спостерігати за процесом з різних ракурсів і бачити кожну карту чи результат кидка кубиків.</p>
+
+<p>У лайв розділі доступні класичні карткові ігри: блекджек у різних варіаціях (класичний, європейський, VIP-столи з високими лімітами), баккара, покер (Caribbean, Texas Hold'em). Велику частину займає рулетка онлайн — від стандартної європейської та французької до тематичних версій з унікальними бонусними механіками.</p>
+
+<p>Особливий інтерес викликають ігрові шоу — розважальні формати з елементами лотереї та бонусних раундів. Dream Catcher, Monopoly Live, Crazy Time — ці шоу поєднують азарт, інтерактивність і можливість виграти великі множники. Дилери спілкуються з гравцями в чаті, створюючи дружню атмосферу та відповідаючи на запитання.</p>
+
+<p>Лайв ігри доступні 24/7, столи працюють без перерв. Ставки стартують від кількох гривень, що робить Live Casino доступним навіть для новачків із невеликим банкроллом. Для хайроллерів передбачені VIP-столи з підвищеними лімітами та персональним обслуговуванням.</p>
+
+<h2>Мобільна версія та додаток Gorilla</h2>
+
+<p>Більшість користувачів сьогодні грає зі смартфонів, і Gorilla Casino це враховує. Платформа має повністю адаптивну мобільну версію сайту, яка коректно відображається на екранах будь-якого розміру — від компактних смартфонів до планшетів. Усі функції десктопної версії доступні в мобільній: реєстрація, поповнення рахунку, активація бонусів, гра в слоти та лайв казино, виведення коштів і спілкування зі службою підтримки.</p>
+
+<p>Мобільний сайт не вимагає завантаження — достатньо відкрити браузер (Chrome, Safari, Firefox) і перейти на офіційну адресу казино. Інтерфейс оптимізований під сенсорне управління, всі кнопки та меню зручно розташовані для використання однією рукою. Швидкість завантаження сторінок висока навіть при нестабільному інтернет-з'єднанні.</p>
+
+<h3>Мобільний додаток Gorilla для Android та iOS</h3>
+
+<p>Для ще більшого комфорту розроблено окремий додаток, який можна скачати Горіла Казино на Андроїд і встановити на пристрої з операційною системою Android або iOS. Додаток має кілька переваг перед браузерною версією:</p>
+
+<ul>
+  <li>Швидкий запуск одним дотиком з іконки на головному екрані</li>
+  <li>Плавніша анімація та менше споживання трафіку завдяки оптимізації</li>
+  <li>Push-повідомлення про нові бонуси, турніри та акції</li>
+  <li>Можливість гри в окремих слотах офлайн (демо режим)</li>
+  <li>Підвищена безпека завдяки автоматичній авторизації через біометрію (Face ID, Touch ID)</li>
+</ul>
+
+<p>Скачати додаток Горіла можна безпосередньо з сайту казино — для Android доступний APK-файл (оскільки Google Play не публікує азартні додатки для України). Для iOS додаток можна встановити через офіційний App Store або також завантажити з сайту через профіль розробника. Інструкція з установки детально описана на сайті, процес займає 2-3 хвилини.</p>
+
+<p>Технічні вимоги мінімальні: Android 5.0 і вище, iOS 11 і вище. Додаток працює стабільно навіть на бюджетних моделях смартфонів. Оновлення виходять регулярно, додаючи нові функції та підвищуючи продуктивність.</p>
+
+<h2>Поповнення рахунку та виведення коштів</h2>
+
+<p>Gorilla Casino підтримує широкий спектр платіжних систем, популярних в Україні. Усі транзакції проводяться в гривнях без прихованих комісій з боку казино. Мінімальна сума депозиту — від 100 грн, що робить платформу доступною для гравців з будь-яким бюджетом.</p>
+
+<h3>Методи поповнення рахунку</h3>
+
+<p>Депозит зараховується миттєво незалежно від обраного способу. Доступні наступні платіжні системи:</p>
+
+<ul>
+  <li><strong>Банківські картки:</strong> Visa, Mastercard — найпопулярніший спосіб, зарахування миттєве</li>
+  <li><strong>Електронні гаманці:</strong> Google Pay, Apple Pay — швидке поповнення в один клік</li>
+  <li><strong>Банківський переказ:</strong> переказ напряму з банківського рахунку через систему Приват24, Monobank тощо</li>
+  <li><strong>Платіжні термінали:</strong> поповнення готівкою через термінали самообслуговування (комісія може стягуватися терміналом)</li>
+</ul>
+
+<p>Для здійснення депозиту увійдіть в особистий кабінет, оберіть розділ «Каса» або «Поповнити», вкажіть суму та оберіть зручний метод. Слідуйте інструкціям на екрані — процес інтуїтивно зрозумілий і займає не більше хвилини.</p>
+
+<h3>Виведення виграшів</h3>
+
+<p>Виведення грошей можливе лише після завершення верифікації акаунту. Це обов'язкова вимога регулятора для всіх легальних казино. Після успішної верифікації виведення проходить швидко і без зайвих формальностей.</p>
+
+<p>Терміни виведення коштів:</p>
+
+<ul>
+  <li>Електронні гаманці та банківські картки — від кількох годин до 24 годин</li>
+  <li>Банківський переказ — 1-3 робочих дні</li>
+</ul>
+
+<p>Мінімальна сума для виведення — зазвичай від 200 грн. Максимальний ліміт залежить від рівня в програмі лояльності та статусу гравця. Для VIP-клієнтів ліміти підвищені, і обробка заявок проходить у пріоритетному порядку.</p>
+
+<p>Важливо: казино може запросити додаткову верифікацію при великих виведеннях (підтвердження джерела коштів, повторну ідентифікацію). Це стандартна процедура, спрямована на боротьбу з відмиванням грошей і захист рахунку від шахрайства.</p>
 
 <table>
-<thead>
-<tr>
-<th>Kryterium</th>
-<th>Licencjonowane kasyna zagraniczne</th>
-<th>Lokalne platformy nielicencjonowane</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Licencja i regulacje</td>
-<td>Posiada ważne licencje (Malta, Curacao, KRAIL)</td>
-<td>Brak oficjalnej licencji lub nieweryfikowane zezwolenia</td>
-</tr>
-<tr>
-<td>Bezpieczeństwo środków</td>
-<td>Gwarancja bezpieczeństwa depozytów i wypłat</td>
-<td>Ryzyko utraty środków</td>
-</tr>
-<tr>
-<td>Metody płatności</td>
-<td>Szerokie spektrum: karty, e-portfele, krypto</td>
-<td>Ograniczona dostępność metod</td>
-</tr>
-<tr>
-<td>Jakość gier</td>
-<td>Gry od czołowych dostawców (Pragmatic, NetEnt)</td>
-<td>Często gry niskiej jakości lub niesprawdzone</td>
-</tr>
-<tr>
-<td>Obsługa klienta</td>
-<td>Wsparcie 24/7, czat na żywo, e-mail</td>
-<td>Ograniczone wsparcie lub jego brak</td>
-</tr>
-<tr>
-<td>Czas wypłat</td>
-<td>Od kilku minut do 5 dni roboczych</td>
-<td>Opóźnienia, czasem brak możliwości wypłaty</td>
-</tr>
-<tr>
-<td>Bonusy</td>
-<td>Hojne pakiety powitalne, program lojalnościowy</td>
-<td>Niejasne warunki bonusowe</td>
-</tr>
-</tbody>
+  <thead>
+    <tr>
+      <th>Метод</th>
+      <th>Депозит (мін.)</th>
+      <th>Виведення (мін.)</th>
+      <th>Термін обробки</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Visa / Mastercard</td>
+      <td>100 грн</td>
+      <td>200 грн</td>
+      <td>До 24 годин</td>
+    </tr>
+    <tr>
+      <td>Google Pay / Apple Pay</td>
+      <td>100 грн</td>
+      <td>200 грн</td>
+      <td>До 24 годин</td>
+    </tr>
+    <tr>
+      <td>Банківський переказ</td>
+      <td>500 грн</td>
+      <td>500 грн</td>
+      <td>1-3 робочих дні</td>
+    </tr>
+    <tr>
+      <td>Електронні гаманці</td>
+      <td>100 грн</td>
+      <td>200 грн</td>
+      <td>Кілька годин</td>
+    </tr>
+  </tbody>
 </table>
+
+<h3>Служба підтримки гравців</h3>
+
+<p>Технічна підтримка Gorilla Casino працює цілодобово без вихідних. Ви можете звернутися до операторів будь-якої миті, коли виникають запитання чи проблеми. Основний канал зв'язку — онлайн чат на сайті, іконка якого розташована в нижньому правому куті. Час очікування відповіді зазвичай не перевищує 1-2 хвилини.</p>
+
+<p>Оператори підтримки володіють українською мовою, що важливо для комфортного спілкування. Вони допоможуть з технічними питаннями (проблеми з авторизацією, завантаженням ігор), фінансовими операціями (статус виведення, нарахування бонусу) і роз'яснять будь-які незрозумілі моменти умов та правил платформи.</p>
+
+<p>Альтернативний спосіб зв'язку — електронна пошта. На email можна надіслати детальний опис проблеми, прикріпити скріншоти або документи. Відповідь зазвичай приходить протягом кількох годин, максимум — протягом доби.</p>
+
+<p>На сайті також є розділ FAQ (часті запитання), де зібрані відповіді на найпопулярніші питання. Перш ніж звертатися в підтримку, рекомендується переглянути цей розділ — можливо, відповідь на ваше запитання вже є там.</p>
+
+<h2>Порівняння: нелегальні сайти vs ліцензійне казино</h2>
+
+<p>На ринку України присутні як ліцензійні платформи з дозволом КРАІЛ, так і нелегальні офшорні казино, які працюють без дозволу регулятора. Важливо розуміти ключові відмінності та ризики, пов'язані з грою на нелегальних сайтах.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Критерій</th>
+      <th>Нелегальні казино</th>
+      <th>Ліцензійні (Gorilla UA Casino)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ліцензія КРАІЛ</td>
+      <td>Відсутня</td>
+      <td>Є офіційна ліцензія</td>
+    </tr>
+    <tr>
+      <td>Податки та законність</td>
+      <td>Порушення законодавства, загроза блокування</td>
+      <td>Легальна діяльність, сплачують податки</td>
+    </tr>
+    <tr>
+      <td>Захист гравців</td>
+      <td>Відсутній, ризик шахрайства</td>
+      <td>Гарантія безпеки КРАІЛ, окремі рахунки</td>
+    </tr>
+    <tr>
+      <td>Чесність ігор</td>
+      <td>Не перевірена, можливі маніпуляції</td>
+      <td>Сертифіковані ігри, аудит RNG</td>
+    </tr>
+    <tr>
+      <td>Виведення виграшів</td>
+      <td>Можуть відмовити без пояснень</td>
+      <td>Гарантоване виведення згідно умов</td>
+    </tr>
+    <tr>
+      <td>Підтримка українською</td>
+      <td>Часто відсутня або низької якості</td>
+      <td>Цілодобова підтримка українською</td>
+    </tr>
+    <tr>
+      <td>Відповідальна гра</td>
+      <td>Не дотримуються стандартів</td>
+      <td>Інструменти контролю, ліміти, самовиключення</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Гра в нелегальних казино несе серйозні ризики: від блокування доступу до сайту з боку провайдера до повної втрати депозиту без можливості відшкодування. Регулятор КРАІЛ не контролює такі платформи, тому у разі конфлікту гравець залишається без захисту.</p>
+
+<p>Ліцензійні казино, такі як Gorilla UA Casino, працюють прозоро, дотримуються законодавства та гарантують безпеку коштів і особистих даних. Вибір легальної платформи — це інвестиція у власне спокій і впевненість у чесності гри.</p>
+
+<h2>Відгуки про Gorilla Casino</h2>
+
+<p>Репутація платформи серед гравців переважно позитивна. Користувачі відзначають швидку верифікацію через Дію, широкий вибір ігор від топових провайдерів і оперативну роботу служби підтримки. Особливо хвалять прозорість умов бонусів і чесність виплат — виграші виводяться без затримок після виконання вимог вейджеру.</p>
+
+<p>Серед мінусів іноді згадують не надто великий асортимент методів виведення порівняно з міжнародними платформами та відносно високі вимоги щодо відіграшу бонусів. Однак ці моменти є стандартними для ліцензійних казино в Україні і пов'язані з вимогами регулятора.</p>
+
+<p>Багато відгуків про Gorilla Casino підкреслюють зручність мобільного додатку та якість live-трансляцій у розділі з живими дилерами. Гравці цінують можливість грати в улюблені слоти з будь-якого місця і в будь-який час без втрати якості та швидкості.</p>
+
+<p>На тематичних форумах та в соціальних мережах можна знайти детальні розбори стратегій гри, поради щодо вибору слотів з найвищим RTP і обговорення поточних акцій. Активна спільнота гравців — ще один показник довіри до платформи.</p>
 
 
 </div>
@@ -363,72 +553,73 @@
     </section>
 
     <!-- Payment Methods Banner -->
-    <section class="py-10 bg-slate-950 border-y border-slate-900">
-        <div class="container mx-auto px-4 overflow-hidden">
-            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-50 hover:opacity-100 transition-opacity">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" class="h-6 md:h-8 filter invert">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" class="h-8 md:h-10">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" class="h-6 md:h-8 filter invert">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Bitcoin" class="h-6 md:h-8">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Apple_Pay_logo.svg" alt="Apple Pay" class="h-6 md:h-8 filter invert">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Google_Pay_Logo.svg" alt="Google Pay" class="h-6 md:h-8 filter invert">
+    <section class="py-12 bg-slate-950 border-y border-white/5">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center items-center gap-8 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
+                <span class="font-bold text-2xl tracking-widest">VISA</span>
+                <span class="font-bold text-2xl tracking-widest">Mastercard</span>
+                <span class="font-bold text-2xl tracking-widest">Bitcoin</span>
+                <span class="font-bold text-2xl tracking-widest">Skrill</span>
+                <span class="font-bold text-2xl tracking-widest">Neteller</span>
+                <span class="font-bold text-2xl tracking-widest">BLIK</span>
+                <span class="font-bold text-2xl tracking-widest">Ethereum</span>
             </div>
         </div>
     </section>
 
     <!-- FAQ Section -->
-    <section class="py-20 bg-slate-950" id="faq">
+    <section class="py-20 bg-slate-900/30">
         <div class="container mx-auto px-4 max-w-3xl">
-            <h2 class="text-3xl font-bold mb-10 text-center uppercase tracking-tight">Najczęściej zadawane pytania</h2>
-            <div class="space-y-4">
+            <h2 class="text-4xl font-bold mb-12 text-center">Поширені питання</h2>
+            <div id="faq" class="space-y-4">
                 
 <div class="border border-slate-700 hover:border-slate-500 transition-colors rounded-lg bg-slate-900/50 overflow-hidden cursor-pointer mb-4" onclick="toggleFaq(0)">
     <div class="flex justify-between items-center p-4">
-        <h3 class="font-bold text-sm text-slate-200">Czy Gorilla UA Casino jest bezpieczne i legalne?</h3>
+        <h3 class="font-bold text-sm text-slate-200">Чи потрібна верифікація для гри в Gorilla Casino?</h3>
         <svg id="faq-icon-0" class="w-4 h-4 text-slate-400 transition-transform duration-300" style="transform: rotate(0deg)" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
     </div>
     <div id="faq-content-0" class="hidden px-4 pb-4 text-sm text-slate-400 border-t border-slate-800 pt-3">
-        Tak, platforma działa na podstawie ważnej licencji i stosuje najnowsze technologie szyfrowania danych. Wszystkie gry są regularnie audytowane przez niezależne organizacje, co potwierdza ich uczciwość. Gracze mogą bezpiecznie deponować środki oraz wypłacać wygrane bez obaw o bezpieczeństwo swoich pieniędzy.
+        Так, верифікація обов'язкова для всіх гравців згідно з вимогами КРАІЛ. Ви можете пройти її швидко через додаток Дія, BankID або завантаживши документи. Верифікація необхідна для першого виведення коштів і гарантує безпеку вашого акаунту.
     </div>
 </div>
 
 <div class="border border-slate-700 hover:border-slate-500 transition-colors rounded-lg bg-slate-900/50 overflow-hidden cursor-pointer mb-4" onclick="toggleFaq(1)">
     <div class="flex justify-between items-center p-4">
-        <h3 class="font-bold text-sm text-slate-200">Jak długo trwa weryfikacja konta gracza?</h3>
+        <h3 class="font-bold text-sm text-slate-200">Які мінімальні та максимальні суми депозиту та виведення?</h3>
         <svg id="faq-icon-1" class="w-4 h-4 text-slate-400 transition-transform duration-300" style="transform: rotate(0deg)" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
     </div>
     <div id="faq-content-1" class="hidden px-4 pb-4 text-sm text-slate-400 border-t border-slate-800 pt-3">
-        Proces weryfikacji tożsamości zazwyczaj trwa od 24 do 72 godzin, w zależności od obciążenia działu obsługi dokumentów. Aby przyspieszyć proces, zaleca się przesłanie czytelnych skanów dokumentów oraz upewnienie się, że wszystkie dane są aktualne i zgodne z informacjami podanymi podczas rejestracji.
+        Мінімальний депозит становить 100 грн, мінімальна сума виведення — 200 грн. Максимальні ліміти залежать від вашого статусу в програмі лояльності та обраного методу оплати. Для VIP-гравців ліміти значно вищі.
     </div>
 </div>
 
 <div class="border border-slate-700 hover:border-slate-500 transition-colors rounded-lg bg-slate-900/50 overflow-hidden cursor-pointer mb-4" onclick="toggleFaq(2)">
     <div class="flex justify-between items-center p-4">
-        <h3 class="font-bold text-sm text-slate-200">Jaki jest minimalny depozyt wymagany do gry?</h3>
+        <h3 class="font-bold text-sm text-slate-200">Як отримати бездепозитний бонус Gorilla Casino?</h3>
         <svg id="faq-icon-2" class="w-4 h-4 text-slate-400 transition-transform duration-300" style="transform: rotate(0deg)" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
     </div>
     <div id="faq-content-2" class="hidden px-4 pb-4 text-sm text-slate-400 border-t border-slate-800 pt-3">
-        Minimalny depozyt to zazwyczaj równowartość 50 hrywien lub 10 złotych, w zależności od wybranej waluty i metody płatności. Niektóre promocje mogą wymagać wyższego pierwszego depozytu, aby móc odebrać bonus powitalny. Dokładne limity można sprawdzić w sekcji płatności po zalogowaniu się do konta.
+        Gorilla Casino бездепозитний бонус надається рідко і зазвичай у рамках спеціальних акцій або для новозареєстрованих гравців. Слідкуйте за розділом «Акції» на сайті та підпишіться на розсилку, щоб не пропустити такі пропозиції.
     </div>
 </div>
 
 <div class="border border-slate-700 hover:border-slate-500 transition-colors rounded-lg bg-slate-900/50 overflow-hidden cursor-pointer mb-4" onclick="toggleFaq(3)">
     <div class="flex justify-between items-center p-4">
-        <h3 class="font-bold text-sm text-slate-200">Czy mogę grać na urządzeniach mobilnych?</h3>
+        <h3 class="font-bold text-sm text-slate-200">Чи можна грати в Gorilla Casino з мобільного телефону?</h3>
         <svg id="faq-icon-3" class="w-4 h-4 text-slate-400 transition-transform duration-300" style="transform: rotate(0deg)" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
     </div>
     <div id="faq-content-3" class="hidden px-4 pb-4 text-sm text-slate-400 border-t border-slate-800 pt-3">
-        Tak, platforma jest w pełni zoptymalizowana pod kątem urządzeń mobilnych. Gracze mogą korzystać z responsywnej wersji strony w przeglądarce na smartfonach i tabletach z systemem Android lub iOS. Niektóre kasyna oferują również dedykowaną aplikację mobilną, którą można pobrać bezpośrednio ze strony operatora.
+        Так, платформа повністю адаптована для мобільних пристроїв. Ви можете грати через браузер на мобільній версії сайту або скачати офіційний додаток для Android та iOS для ще більшої зручності та швидкості.
     </div>
 </div>
 
 <div class="border border-slate-700 hover:border-slate-500 transition-colors rounded-lg bg-slate-900/50 overflow-hidden cursor-pointer mb-4" onclick="toggleFaq(4)">
     <div class="flex justify-between items-center p-4">
-        <h3 class="font-bold text-sm text-slate-200">Jak szybko mogę wypłacić wygrane środki?</h3>
+        <h3 class="font-bold text-sm text-slate-200">Скільки часу займає виведення виграшу на карту?</h3>
         <svg id="faq-icon-4" class="w-4 h-4 text-slate-400 transition-transform duration-300" style="transform: rotate(0deg)" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
     </div>
     <div id="faq-content-4" class="hidden px-4 pb-4 text-sm text-slate-400 border-t border-slate-800 pt-3">
-        Czas realizacji wypłaty zależy od wybranej metody płatności. E-portfele jak Skrill i Neteller pozwalają na wypłatę w ciągu kilku godzin, natomiast przelewy bankowe mogą potrwać od 3 do 5 dni roboczych. Kryptowaluty oferują najszybszy czas wypłaty, często poniżej jednej godziny. Przed zleceniem wypłaty konieczne jest spełnienie wymogu obrotu bonusem oraz weryfikacja konta.
+        Виведення на банківську карту (Visa, Mastercard) зазвичай обробляється протягом 24 годин після подання заявки. У деяких випадках кошти можуть надійти швидше — протягом кількох годин. Банківський переказ може зайняти 1-3 робочих дні.
     </div>
 </div>
             </div>
@@ -436,67 +627,69 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-slate-950 pt-20 pb-10 border-t border-slate-900">
+    <footer class="bg-slate-950 pt-20 pb-10 border-t border-white/10">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                 <div class="col-span-1 lg:col-span-2">
-                    <img src="" alt="Brand Logo" class="brand-logo h-10 w-auto mb-6">
-                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
-                        Niezależna strona porównawcza.
+                    <div class="flex items-center gap-2 mb-6">
+                        <img src="" alt="Logo" class="brand-logo h-8 w-auto">
+                        <span class="brand-name font-extrabold text-xl text-emerald-500"></span>
+                    </div>
+                    <p class="text-slate-400 mb-6 max-w-md italic">
+                        Незалежний сайт порівняння.
                     </p>
                     <div class="flex gap-4">
-                        <div class="w-10 h-10 rounded-full border border-slate-800 flex items-center justify-center text-red-500 font-bold">18+</div>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/BeGambleAware_Logo.png" alt="BeGambleAware" class="h-10 opacity-60">
+                        <div class="w-10 h-10 border border-white/10 rounded flex items-center justify-center font-bold text-xs">18+</div>
+                        <div class="w-10 h-10 border border-white/10 rounded flex items-center justify-center font-bold text-xs">BeGambleAware</div>
                     </div>
                 </div>
                 <div>
-                    <h4 class="font-bold mb-6 uppercase text-sm tracking-widest text-lime-400">Nawigacja</h4>
-                    <ul class="space-y-4 text-sm text-slate-400">
-                        <li><a href="#" class="hover:text-white transition">O nas</a></li>
-                        <li><a href="#" class="hover:text-white transition">Regulamin</a></li>
-                        <li><a href="#" class="hover:text-white transition">Polityka prywatności</a></li>
-                        <li><a href="#" class="hover:text-white transition">Odpowiedzialna gra</a></li>
+                    <h4 class="font-bold mb-6">Szybkie linki</h4>
+                    <ul class="space-y-4 text-slate-400">
+                        <li><a href="#" class="brand-cta hover:text-emerald-500 transition-colors">Rejestracja</a></li>
+                        <li><a href="#" class="brand-cta hover:text-emerald-500 transition-colors">Bonus Powitalny</a></li>
+                        <li><a href="#" class="brand-cta hover:text-emerald-500 transition-colors">Gry Slotowe</a></li>
+                        <li><a href="#" class="brand-cta hover:text-emerald-500 transition-colors">Kasyno na Żywo</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="font-bold mb-6 uppercase text-sm tracking-widest text-lime-400">Pomoc</h4>
-                    <ul class="space-y-4 text-sm text-slate-400">
-                        <li><a href="#" class="hover:text-white transition">FAQ</a></li>
-                        <li><a href="#" class="hover:text-white transition">Kontakt</a></li>
-                        <li><a href="#" class="hover:text-white transition">Metody płatności</a></li>
-                        <li><a href="#" class="hover:text-white transition">Program Partnerski</a></li>
+                    <h4 class="font-bold mb-6">Wsparcie</h4>
+                    <ul class="space-y-4 text-slate-400">
+                        <li><a href="#" class="hover:text-emerald-500">Centrum Pomocy</a></li>
+                        <li><a href="#" class="hover:text-emerald-500">Regulamin</a></li>
+                        <li><a href="#" class="hover:text-emerald-500">Polityka Prywatności</a></li>
+                        <li><a href="#" class="hover:text-emerald-500">Odpowiedzialna Gra</a></li>
                     </ul>
                 </div>
             </div>
             
-            <div class="border-t border-slate-900 pt-10 text-center">
-                <p class="text-xs text-slate-500 leading-relaxed max-w-4xl mx-auto">
-                    Hazard może uzależniać. Graj odpowiedzialnie. 18+
+            <div class="border-t border-white/5 pt-10 text-center">
+                <p class="text-slate-500 text-xs leading-relaxed mb-6 max-w-4xl mx-auto">
+                    Азартні ігри можуть викликати залежність. Будь ласка, грайте відповідально. 18+
                 </p>
-                <p class="mt-6 text-xs text-slate-600">
-                    &copy; 2026 <span class="brand-name"></span>. Wszelkie prawa zastrzeżone.
+                <p class="text-slate-600 text-sm">
+                    &copy; 2026 <span class="brand-name"></span>. Wszystkie prawa zastrzeżone.
                 </p>
             </div>
         </div>
     </footer>
 
+    <!-- Dynamic Brand Logic -->
     <script>
-        // Lucide Icons Initialization
-        lucide.createIcons();
-
-        // The backend will inject the array here
-        const casinos = [{"rank":1,"name":"20bet","rating":4.8,"bonus":"100% do 500 PLN + 120 darmowych spinów","highlights":["Ponad 4000 gier kasynowych","Szybkie wypłaty kryptowalutami","Kasyno na żywo z Evolution Gaming"],"pros":["Licencja Curacao gwarantuje bezpieczeństwo","Wsparcie dla wielu metod płatności","Aplikacja mobilna na Android i iOS"],"cons":["Brak licencji lokalnej w Polsce"],"payments":"Visa, Mastercard, Skrill, Neteller, Bitcoin, Ethereum","link":"https://afflink.com?utm-source-test=20bet","url":"https://afflink.com?utm-source-test=20bet","href":"https://afflink.com?utm-source-test=20bet","payout":"Immediato","payout_time":"Immediato","payoutTime":"Immediato","withdrawal_time":"Immediato","withdrawal":"Immediato","speed":"Immediato","payoutSpeed":"Immediato","payout_speed":"Immediato","fast_payout":"Immediato","time":"Immediato","highlight":"Ponad 4000 gier kasynowych","features":["Ponad 4000 gier kasynowych"],"logo":null}];
+        const casinos = [{"rank":1,"name":"20bet","rating":4.8,"bonus":"100% до 2000 грн + 120 фріспінів","highlights":["Швидка верифікація через Дію","Понад 3000 ігор від топ-провайдерів","Цілодобова підтримка українською"],"pros":["Ліцензія КРАІЛ","Миттєві депозити та швидкі виплати","Широкий вибір слотів та Live Casino","Зручний мобільний додаток"],"cons":["Вейджер x40 на вітальний бонус","Обмежений вибір методів виведення"],"payments":"Visa, Mastercard, Google Pay, Apple Pay, Банківський переказ","link":"https://afflink.com?utm-source-test=20bet","url":"https://afflink.com?utm-source-test=20bet","href":"https://afflink.com?utm-source-test=20bet","payout":"Immediato","payout_time":"Immediato","payoutTime":"Immediato","withdrawal_time":"Immediato","withdrawal":"Immediato","speed":"Immediato","payoutSpeed":"Immediato","payout_speed":"Immediato","fast_payout":"Immediato","time":"Immediato","highlight":"Швидка верифікація через Дію","features":["Швидка верифікація через Дію"],"logo":null}];
         
         document.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+
             if (casinos && casinos.length > 0) {
-                const brand = casinos[0]; // Use the primary brand
+                const brand = casinos[0];
                 
-                // Inject affiliate links into ALL action buttons
+                // Inject affiliate links
                 document.querySelectorAll('.brand-cta').forEach(btn => {
                     btn.href = brand.url || brand.link || '#';
                 });
                 
-                // Inject brand name into UI elements
+                // Inject brand name
                 document.querySelectorAll('.brand-name').forEach(el => {
                     el.textContent = brand.name;
                 });
@@ -506,28 +699,33 @@
                     el.textContent = brand.bonus;
                 });
                 
-                // Inject logo image
+                // Inject logo
                 document.querySelectorAll('.brand-logo').forEach(img => {
                     img.src = brand.logo;
                     img.alt = brand.name + ' logo';
                 });
             }
 
-            // FAQ Accordion Logic
-            const faqItems = document.querySelectorAll('#faq dt, #faq .faq-question');
+            // Simple FAQ Accordion Logic
+            const faqItems = document.querySelectorAll('#faq > div');
             faqItems.forEach(item => {
-                item.addEventListener('click', () => {
-                    const content = item.nextElementSibling;
-                    if (content.style.maxHeight) {
-                        content.style.maxHeight = null;
-                        item.classList.remove('active');
-                    } else {
-                        document.querySelectorAll('#faq dd, #faq .faq-answer').forEach(ans => ans.style.maxHeight = null);
-                        content.style.maxHeight = content.scrollHeight + "px";
-                        item.classList.add('active');
+                const header = item.querySelector('h3, button');
+                if (header) {
+                    header.classList.add('cursor-pointer', 'flex', 'items-center', 'justify-between', 'w-full', 'py-4', 'text-left', 'border-b', 'border-white/10', 'hover:text-emerald-500', 'transition-colors');
+                    header.innerHTML += '<i data-lucide="chevron-down" class="w-5 h-5 transition-transform"></i>';
+                    
+                    const content = item.querySelector('div, p');
+                    if (content) {
+                        content.classList.add('hidden', 'py-4', 'text-slate-400');
+                        header.addEventListener('click', () => {
+                            const isHidden = content.classList.contains('hidden');
+                            content.classList.toggle('hidden');
+                            header.querySelector('svg').style.transform = isHidden ? 'rotate(180deg)' : 'rotate(0deg)';
+                        });
                     }
-                });
+                }
             });
+            lucide.createIcons(); // Re-init icons for the newly added ones
         });
     </script>
 </body>
